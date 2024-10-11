@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../Resources/TableStyles/bordered_separators.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>CUI Template</h1>
+        <p>When you open the Titus Administration Console, click the Configurations tab and select CUIConfig-V100. From here, you can examine your Schema, Schema Views, and Policies.</p>
+        <h2>CUI Schema</h2>
+        <p>The CUI Schema shows various fields and conditions and how the fields relate to each other. The Schema defines the classification levels with which the user interacts. It is the foundation of a Titus Configuration.</p>
+        <p>Schemas contain Fields and Values used to indicate the type of information being applied to the content. For example, the Schema Field “Dissemination” contains a list of Dissemination Control Values. You can edit these Values as required. For more information on editing Values, see the <i>Titus Administration Console User Guide</i>.</p>
+        <p>
+            <img src="../Resources/Images/Administration Guide/CUI schema.png" style="width: 198px;height: 377px;mc-thumbnail: hover;" />
+        </p>
+        <h2>Schema Views</h2>
+        <p>The Schema View allows you to configure the fields and values you want to appear in the Select dialog.</p>
+        <p>There are two Schema Views configured in the CUIConfig-V100 file - Default and CUI Default. The CUI Default View should be used by organizations who have a CUI only requirement. The Default View includes the CUI capabilities plus additional Export Control features. See <MadCap:xref href="Default Schema View.htm"><i>Default Schema View</i> on page 1 </MadCap:xref> for more information.</p>
+        <p>The CUI Default Schema View contains what you need for CUI.</p>
+        <h3>CUI&#160;Default Schema View</h3>
+        <p>The CUI Default Schema View is a subset of the Default Schema View. </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/bordered_separators.css');" class="TableStyle-bordered_separators" cellspacing="0">
+            <col class="TableStyle-bordered_separators-Column-Column1" style="width: 453px;" />
+            <col class="TableStyle-bordered_separators-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyB-Column1-Body1">
+                        <img src="../Resources/Images/Administration Guide/CUI Default Schema View.png" style="width: 368px;height: 129px;mc-thumbnail: hover;" />
+                    </td>
+                    <td class="TableStyle-bordered_separators-BodyA-Column1-Body1">
+                        <img src="../Resources/Images/Administration Guide/CUI Default Select dialog.png" style="max-width: 25%;mc-thumbnail: hover;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/bordered_separators.css');" class="TableStyle-bordered_separators" cellspacing="0">
+            <col class="TableStyle-bordered_separators-Column-Column1" />
+            <col class="TableStyle-bordered_separators-Column-Column1" />
+            <col class="TableStyle-bordered_separators-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <th class="TableStyle-bordered_separators-BodyE-Column1-Body1">Field in Schema</th>
+                    <th class="TableStyle-bordered_separators-BodyE-Column1-Body1">Matching field in Select dialog</th>
+                    <th class="TableStyle-bordered_separators-BodyD-Column1-Body1">Next steps</th>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body2">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2">Designation</td>
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2">Controlled?</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body2">Select Yes or No. If Yes, go to <MadCap:xref href="#Contains3"><i>Contains CUI?</i> on page 1</MadCap:xref>. If No, no further options are available.</td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1"><a name="Contains"></a>Contains<br />CUI</td>
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1"><a name="Contains3"></a>Contains CUI?</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body1">Select Yes or No.  If Yes, go to <MadCap:xref href="#Organiza"><i>Organizational Grouping</i> on page 1</MadCap:xref>.  If No, no further options are available.</td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body2">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2"><a name="Grouping"></a>Grouping</td>
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2"><a name="Organiza"></a>Organizational Grouping</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body2">
+                        <p>If the information contains CUI, the user must select either:</p>
+                        <ul>
+                            <li>
+                                <p>Full List which shows all <MadCap:xref href="#CUI&#160;Cate2"><i>CUI&#160;Categories</i> on page 1</MadCap:xref> and <MadCap:xref href="#DISSEMIN2"><i>DISSEMINATION CONTROL</i> on page 1</MadCap:xref></p>
+                            </li>
+                            <li>
+                                <p>Filtered which shows only the most commonly used Categories and Dissemination Controls</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1">CUI</td>
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1"><a name="CUI&#160;Cate2"></a>CUI&#160;<br />Categories</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body1">
+                        <p>Select from the list of CUI&#160;Categories. The categories correspond to the CUI&#160;Markings found in<a href="https://www.archives.gov/cui/registry/category-marking-list">https://www.archives.gov/cui/registry/category-marking-list</a></p>
+                        <p>The selections you make in the CUI Categories appear in the headings/footers of your document or in the body of your email message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body2">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2">Dissemination</td>
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2"><a name="DISSEMIN2"></a>DISSEMINATION CONTROL</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body2">
+                        <p>Select from the list of Dissemination Control groups who is allowed to see the information. For more information, see <a href="https://www.archives.gov/cui/registry/limited-dissemination">https://www.archives.gov/cui/registry/limited-dissemination</a> </p>
+                        <p>The selections you make in the Dissemination Control appear in the headings/footers of your document or in the body of your email message.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyB-Column1-Body1">ControlledBy</td>
+                    <td class="TableStyle-bordered_separators-BodyB-Column1-Body1">Controlled By</td>
+                    <td class="TableStyle-bordered_separators-BodyA-Column1-Body1">An agency that controls the CUI</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Policies, Actions, and Events</h2>
+        <p>Policies are containers for Rules and Actions. Specifically, Rules are used to control, or conditionally control, the Actions that are run/executed when an Event occurs and any specified conditions have been met. The conditions must be evaluated as true to apply the Action that has been associated with the Rule.</p>
+        <p>The following Policy Events are supported in the CUI template:</p>
+        <ul>
+            <li>
+                <p>Occurs when a message is sent (Titus Message Classification or Titus Classification for Microsoft Outlook)</p>
+            </li>
+            <li>
+                <p>Occurs before any open document is saved (Titus Classification for Microsoft Office)</p>
+            </li>
+            <li>
+                <p>Occurs when user changes the classification of a document  (Titus Classification for Microsoft Office)</p>
+            </li>
+        </ul>
+        <p>The following Action types are in the CUI&#160;template:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/bordered_separators.css');" class="TableStyle-bordered_separators" cellspacing="0">
+            <col class="TableStyle-bordered_separators-Column-Column1">
+            </col>
+            <col class="TableStyle-bordered_separators-Column-Column1">
+            </col>
+            <tbody>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1">Body Tagging</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body1">When this action is applied using the Occurs when new message is started or the Occurs when user 
+changes classification of a message event, the Body Tagging contents are displayed in the message 
+before the email is sent. This allows the message author to see how the Body Tag will appear to the 
+message recipients. In order to ensure that the Body Tag has not been edited by the message author 
+in preview mode and that it reflects the correct information, a Policy must
+also be created using the Occurs when a message is sent event.
+</td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body2">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body2">Apply Advanced Header/Footer</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body2">
+                        <p>The Apply Advanced Header/Footer Action can be used to insert the currently selected
+classification into the header and/or footer of the document using HTML. This Action lets you
+apply Field Values to the header and/or footer of the document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body1">
+                    <td class="TableStyle-bordered_separators-BodyE-Column1-Body1">Apply HTML Header/Footer</td>
+                    <td class="TableStyle-bordered_separators-BodyD-Column1-Body1">The Apply HTML Header/Footer Action can be used to insert text and/or the currently selected
+classification into the header and/or footer of the document.
+This Action only applies to Microsoft Word documents.</td>
+                </tr>
+                <tr class="TableStyle-bordered_separators-Body-Body2">
+                    <td class="TableStyle-bordered_separators-BodyB-Column1-Body2">Apply Custom X-Header</td>
+                    <td class="TableStyle-bordered_separators-BodyA-Column1-Body2">This Apply Custom X-Header applies custom headers to email messages. The Titus Email Solution stores classification metadata in the X-headers of email messages. The Custom X-header Action enables you to specify additional X-headers for classification metadata.
+
+Custom X-headers are typically used for compliance with classification standards, such as the Australian Email Protective Marking Standard. They are also used for interoperability with third-party applications that require the X-header to appear in a specific format.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For more information on these Action types, see the <i>Titus Classification for Windows Policy Authoring User Guide</i>.</p>
+        <h2>How the Classification appears in Email and Documents</h2>
+        <p>Because of the CUI Policy and Actions, when you select values from the CUI Category and Dissemination Control in the Select dialog, their associated markings will display  in the header and footer as per the Banner Marking: Specified Authorities column in <a href="../../Policy Authoring/ECA/Actions/Files/Set Classification.htm#https://www.archives.gov/cui/registry/category-marking-list">https://www.archives.gov/cui/registry/category-marking-list</a>, and the Marking column in <a href="https://www.archives.gov/cui/registry/limited-dissemination">https://www.archives.gov/cui/registry/limited-dissemination.</a></p>
+        <h3>Example 1</h3>
+        <p>If you want to apply the Accident Investigation category to your document, you want to see the CUI//SP-AIV marking in the header and footer. </p>
+        <div class="note" MadCap:autonum="NOTE: ">The SP indicates it is a specified CUI.</div>
+        <p>To apply the CUI//SP-AIV marking:</p>
+        <ol>
+            <li>
+                <p>From the ribbon in your Word document, click Select.</p>
+                <p>
+                    <img src="../Resources/Images/Administration Guide/CUI select.png" style="width: 221px;height: 122px;mc-thumbnail: hover;" />
+                </p>
+            </li>
+            <li>
+                <p>From the Controlled section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the Contains CUI section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the Organizational Grouping, select Full List.</p>
+            </li>
+            <li>
+                <p>From the CUI&#160;Categories section, click Accident Investigation. </p>
+            </li>
+            <li>
+                <p>Click OK.</p>
+                <p>The header and footer of your Word document appears as:</p>
+            </li>
+            <p>
+                <img src="../Resources/Images/Administration Guide/CUI test document.png" style="width: 255px;height: 329px;mc-thumbnail: hover;" />
+            </p>
+        </ol>
+        <h3>Example 2</h3>
+        <p>If you want to send an email to Federal Employees Only, you want to apply that Dissemintation Control. The recipient will see the CUI//FED ONLY marking in the body of the email. </p>
+        <p>To apply the CUI//FED&#160;ONLY marking:</p>
+        <ol>
+            <li>
+                <p>From the ribbon in your email message, click Select.</p>
+                <p>
+                    <img src="../Resources/Images/Administration Guide/CUI select.png" style="mc-thumbnail: hover;">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the Controlled section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the Contains CUI section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the DISSEMINATION&#160;CONTROL section, click Federal Employees only. </p>
+            </li>
+            <li>
+                <p>Click OK.</p>
+                <p>The recipient's email appears as:</p>
+                <p>
+                    <img src="../Resources/Images/Administration Guide/CUI test email.png" style="mc-thumbnail: hover;width: 333px;height: 222px;" />
+                </p>
+            </li>
+        </ol>
+        <h3>Example 3</h3>
+        <p>You can apply both a CUI&#160;Category and Dissemination Control to your Word document or email. In this example, you will apply the Legislative Materials and Physical Security CUI categories for Federal Employees and Contractors only. Your header should appear as CUI//LMI/PHYS/FEDCON.</p>
+        <p>To apply this marking:</p>
+        <ol>
+            <li>
+                <p>From the ribbon in your email message, click Select.</p>
+                <p>
+                    <img src="../Resources/Images/Administration Guide/CUI select.png" style="width: 221px;height: 122px;mc-thumbnail: hover;">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the Controlled section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the Contains CUI section, click Yes.</p>
+            </li>
+            <li>
+                <p>From the CUI Category, select Legislative Materials (LMI) and Physical Security (PHYS).</p>
+            </li>
+            <li>
+                <p>From the DISSEMINATION&#160;CONTROL section, click Federal Employees and Contractors Only.</p>
+            </li>
+            <li>
+                <p>Click OK.</p>
+                <p>The marking appears in the Word document as following:</p>
+            </li>
+            <p>
+                <img src="../Resources/Images/Administration Guide/CUI test document 2.png" style="mc-thumbnail: hover;width: 281px;height: 362px;" />
+            </p>
+        </ol>
+    </body>
+</html>
